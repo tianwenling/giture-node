@@ -1,7 +1,7 @@
 # giture
 - 🍃 一个node.js和java实现前后分离的---node端项目实例
 - 什么是giture?
-```
+```js
 giture 是我打算搭建的一个多人博客、论坛github风格系统,思量了很久最终使用了这套架构:
 前端:node.js       --利用node.js的轻量级、异步等特点,用来实现view+controller层的处理,不处理业务数据。
 后台:java          --利用jersey框架生成最"正统"的RESTFULL接口,负责MODEL数据的处理。具体的会在java项目上说
