@@ -1,5 +1,10 @@
 var express = require('express');
 var router = express.Router();
+var request = require('request');
+var cmmonFetch = require('../util/cmmonFetch');
+
+
+
 
 // router.param('id', /^\d+$/);
 /* GET home page. */
@@ -14,7 +19,8 @@ router.get('/blog', function(req, res, next) {
   res.render('blog');
 });
 router.get('/demo', function(req, res, next) {
-  res.render('demo');
+
+    cmmonFetch.fetchURL('http://localhost/order/1');
 });
 router.get('/404', function(req, res, next) {
   res.render('404');
