@@ -1,0 +1,165 @@
+extends layout
+
+block content
+    // 去掉 layout-small-menu 左侧会预留出广告空白
+    .app.layout-fixed-header.layout-small-menu
+      .main-panel
+        // TODO:css样式写到组件
+        // 导航栏开始
+        // css设置position属性为fixed的定位是相对于浏览器窗口定位的,absolute是固定的(绝对的)
+        header.header.navbar.bg-dark-light(style='padding-left: 0px;left: 0px;margin-left: 0px; color: #fff;background-color: #575c72;position: absolute')
+          // brand visible-xs 响应式栅格系统  适用于小屏幕
+          .brand.visible-xs
+            .toggle-offscreen
+              a.hamburger-icon.visible-xs(href='#')
+                span
+                |  
+                span
+                |  
+                span
+            |                 
+            .brand-logo
+              img(src='../public/images/logo-dark.png', height='15', alt='')
+            |                 
+            .toggle-chat
+              a.hamburger-icon.visible-xs(href='javascript:;')
+                span
+                |  
+                span
+                |  
+                span
+          |             
+          ul.nav.navbar-nav.hidden-xs
+            li
+              span.navbar-text
+                | &#x5E84;&#x5C0F;&#x8FBE;&#x7684;&#x535A;&#x5BA2;&lt;/&gt;
+          |             
+          ul.nav.navbar-nav.navbar-right.hidden-xs
+            li
+              a(href='javascript:;')
+                i.fa.fa-pencil-square-o
+            |                 
+            li
+              a(href='javascript:;', data-toggle='dropdown')
+                i.fa.fa-bell-o
+                |                     
+                .status.bg-danger.border-danger.animated.bounce
+              |                     
+              ul.dropdown-menu.notifications
+                li.notifications-header
+                  p.text-muted.small &#x60A8;&#x6709;&#x4E09;&#x4E2A;&#x672A;&#x8BFB;&#x6D88;&#x606F;
+                |                         
+                li
+                  ul.notifications-list
+                    li
+                      a(href='javascript:;')
+                        span.pull-left.mt2.mr15
+                          img.avatar.avatar-xs.img-circle(src='../public/images/avatar.jpg', alt='')
+                        |                                     
+                        .overflow-hidden
+                          span Sean launched a new application
+                          |  
+                          span.time 2 seconds ago
+                    |                                 
+                    li
+                      a(href='javascript:;')
+                        .pull-left.mt2.mr15
+                          .circle-icon.bg-danger
+                            i.fa.fa-chain-broken
+                        |                                     
+                        .overflow-hidden
+                          span Removed chrome from app list
+                          |  
+                          span.time
+                            | 4
+                            | Hours ago
+                    |                                 
+                    li
+                      a(href='javascript:;')
+                        span.pull-left.mt2.mr15
+                          img.avatar.avatar-xs.img-circle(src='../public/images/face3.jpg', alt='')
+                        |                                     
+                        .overflow-hidden
+                          span.text-muted Jack Hunt has registered
+                          |  
+                          span.time 9 hours ago
+                |                         
+                li.notifications-footer
+                  a(href='javascript:;')
+                    | &#x5168;&#x90E8;&#x5DF2;&#x8BFB;
+            |                 
+            li
+              a(href='javascript:;', data-toggle='dropdown')
+                img.header-avatar.img-circle.ml10(src='../public/images/avatar.jpg', alt='user', title='user')
+                // 基于头像的消息提示
+                .status.bg-lightblue.border-white.mt5.animation--done.animated.rubberBand(data-animation='rubberBand', style='margin-top: 0px;')
+                |                     
+                span.pull-left &#x5E84;&#x5C0F;&#x8FBE;
+              |                     
+              ul.dropdown-menu
+                li
+                  a(href='javascript:;') &#x8BBE;&#x7F6E;
+                |                         
+                li
+                  a(href='javascript:;') &#x8D26;&#x6237;
+                |                         
+                li
+                  a(href='javascript:;')
+                    span.label.bg-danger.pull-right 34
+                    |  
+                    span &#x6D88;&#x606F;
+                |                         
+                li
+                  a(href='javascript:;') &#x5E2E;&#x52A9;
+                |                         
+                li
+                  a(href='signin.html') &#x9000;&#x51FA;
+            |                 
+            li
+              a.hamburger-icon.v2(href='javascript:;', data-toggle='layout-chat-open')
+                span
+                |  
+                span
+                |  
+                span
+        // 导航栏结束
+        // 主板版开始
+        .main-content
+          .eq-col
+            .relative.full-height
+              .display-row
+                .center-wrapper.error-page
+                  .center-content.text-center
+                    .error-number
+                      span 404
+                    |                                 
+                    .h5 PAGE NOT FOUND
+                    |                                 
+                    p
+                      | Sorry, but the page you were trying to view does not
+                      | exist.
+        // 主面板结束
+      |     
+      footer.content-footer
+        nav.footer-right
+          ul.nav
+            li
+              a(href='javascript:;') &#x56DE;&#x5230;&#x8D77;&#x70B9;
+            |                 
+            li
+              a.scroll-up(href='javascript:;')
+                i.fa.fa-angle-up
+        |         
+        nav.footer-left
+          ul.nav
+            li
+              a(href='javascript:;')
+                | Copyright 
+                i.fa.fa-copyright
+                |  
+                span Gitture
+                |  2016. All rights
+                |                     reserved
+            // <li><a href=javascript:;>Careers</a></li>
+            li
+              a(href='javascript:;')  Giture 

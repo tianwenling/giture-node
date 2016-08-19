@@ -1,0 +1,24 @@
+doctype html
+html.no-js
+  head
+    meta(charset='utf-8')
+    title= 'giture'
+    //link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width')
+    // <link rel="shortcut icon" href=/favicon.ico>
+    link(rel='stylesheet', href='/stylesheets/urban/climacons-font.css')
+    link(rel='stylesheet', href='/vendor/urban/rickshaw/rickshaw.min.css')
+    link(rel='stylesheet', href='/stylesheets/urban/app.min.css')
+    script(src='/javascripts/urban/app.min.js')
+
+    link(rel='stylesheet', href='/stylesheets/markdown/styles/default.css')
+    script(src='/stylesheets/markdown/highlight.pack.js')
+    script
+      :coffee
+        hljs.initHighlightingOnLoad();
+  body
+    block content
+
+
+
