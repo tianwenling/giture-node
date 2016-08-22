@@ -7,10 +7,14 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+//engine extend
+engine = require('ejs-mate');
 
 var app = express();
 
 // view engine setup
+//engine extend
+app.engine('ejs', engine);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
