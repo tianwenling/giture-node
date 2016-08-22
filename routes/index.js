@@ -2,7 +2,8 @@ var express = require('express');
 var router = express.Router();
 var request = require('request');
 var cmmonFetch = require('../util/cmmonFetch');
-
+var common = require('../common/config');
+var logger = require('../common/logs').logger('normal');
 
 
 
@@ -23,7 +24,8 @@ router.get('/demo', function(req, res, next) {
     cmmonFetch.fetchURL('http://localhost/order/1');
 });
 router.get('/404', function(req, res, next) {
-  res.render('404');
+  logger.info(common);
+  res.render('404',common);
 });
 router.get('/mine', function(req, res, next) {
   res.render('mine');

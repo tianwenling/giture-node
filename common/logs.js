@@ -9,7 +9,7 @@ log4js.configure({
         {
             type: 'file', //文件输出
             filename: 'logs/access.log',
-            maxLogSize: 1024,
+            maxLogSize: 1024*1000,
             backups:3,
             //与log4js.getLogger('normal')对应,当normal情况下写在日志文件中。
             category: 'normal'
