@@ -15,7 +15,7 @@ var cmmonFetch = require('../util/cmmonFetch');
 //   next();
 //   // res.render('index', { title: 'Express' });
 // });
-router.get('/start', function(req, res, next) {
+router.get('/', function(req, res, next) {
   res.render('start');
 });
 router.get('/demo', function(req, res, next) {
@@ -27,6 +27,18 @@ router.get('/404', function(req, res, next) {
 });
 router.get('/mine', function(req, res, next) {
   res.render('mine');
+});
+router.get('/lock', function(req, res, next) {
+  res.render('lockScreen');
+});
+router.get('/500', function(req, res, next) {
+  res.render('500');
+});
+router.get('/signin', function(req, res, next) {
+  res.render('signin');
+});
+router.get('/signup', function(req, res, next) {
+  res.render('signup');
 });
 
 
