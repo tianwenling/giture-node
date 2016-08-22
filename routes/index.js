@@ -15,8 +15,8 @@ var cmmonFetch = require('../util/cmmonFetch');
 //   next();
 //   // res.render('index', { title: 'Express' });
 // });
-router.get('/blog', function(req, res, next) {
-  res.render('blog');
+router.get('/start', function(req, res, next) {
+  res.render('start');
 });
 router.get('/demo', function(req, res, next) {
 
@@ -24,6 +24,9 @@ router.get('/demo', function(req, res, next) {
 });
 router.get('/404', function(req, res, next) {
   res.render('404');
+});
+router.get('/mine', function(req, res, next) {
+  res.render('mine');
 });
 
 
