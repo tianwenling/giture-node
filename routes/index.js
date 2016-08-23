@@ -1,10 +1,10 @@
 var express = require('express');
 var router = express.Router();
 var request = require('request');
-var cmmonFetch = require('../util/cmmonFetch');
+var nodeFetchUtil = require('../util/nodeFetchUtil');
 var common = require('../common/config');
 var logger = require('../common/logs').logger('normal');
-
+// var fetch = require('node-fetch');
 
 
 // router.param('id', /^\d+$/);
@@ -17,6 +17,7 @@ var logger = require('../common/logs').logger('normal');
 //   // res.render('index', { title: 'Express' });
 // });
 router.get('/', function(req, res, next) {
+  nodeFetchUtil.body('http://localhost/order/1');
   res.render('start');
 });
 router.get('/demo', function(req, res, next) {
