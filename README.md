@@ -14,18 +14,14 @@ python:爬虫+自动化   python语言运用不太熟练,再有实在服务器�
 
 ### node端的架构和使用的中间件
 ####架构
-- express	强大的不需要我解释
-- log4js  	管理日志，集成在express并进一步封装
-- ejs     	默认模板引擎(jade性能极佳，后期会用)
-- ejs-mate	管理ejs模板的layout母版
-- Fetch		代替传统ajax
 
 
-dog | bird | cat
-----|------|----
-foo | foo  | foo
-bar | bar  | bar
-baz | baz  | baz
+
+express         | log4js | ejs       | ejs-mate | fetch
+----------------|--------|-----------|----------|-------------
+强大的不需要我解释 | 管理日志| 默认模板引擎| 管理ejs模板| 代替提传统ajax
+
+
 
 
 
