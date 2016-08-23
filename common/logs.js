@@ -26,11 +26,11 @@ logger.error("error");
 logger.fatal("fatal");
 
 var app = express();
-app.use(log4js.connectLogger(logger, {level:log4js.levels.INFO}));
+app.use(log4js.connectLogger(logger, {level:log4js.levels.DEBUG}));
 
 
 exports.logger=function(name){
     var logger = log4js.getLogger(name);
-    logger.setLevel('INFO');
+    logger.setLevel('DEBUG');
     return logger;
 }

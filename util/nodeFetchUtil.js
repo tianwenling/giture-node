@@ -19,12 +19,11 @@ nodeFetchUtil.body = function (url) {
     });
 };
 // json
-nodeFetchUtil.json = function () {
+nodeFetchUtil.json = function (url) {
     fetch(url)
         .then(function (res) {
             return res.json();
         }).then(function (json) {
-        logger.debug('---fetch-json---:');
         logger.debug(json);
 
     });
