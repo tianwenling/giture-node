@@ -20,10 +20,9 @@ router.get('/', function(req, res, next) {
   res.render('start');
 });
 router.get('/demo', function(req, res, next) {
-logger.info("測試 logger")
+  //TODO:异步的调整
   nodeFetchUtil.body('http://localhost/order/1');
   nodeFetchUtil.json('http://localhost/order/1');
- 
 
 });
 router.get('/404', function(req, res, next) {
