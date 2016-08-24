@@ -4,6 +4,7 @@
 var users = require('express')
 var users = require('../routes/users')
 var logger = require('../common/logs').logger('normal')
+var nodeFetchUtil = require('../util/nodeFetchUtil');
 
 var userService = {};
 
@@ -12,7 +13,6 @@ userService.loadUser = function (username, req, res, next,cbdata) {
     var username = req.params.username || username;
     logger.debug("loadUser...");
     if(userService.verifyUser(username)){
-        logger.debug("loadUser...");
          var userData = {
              nickName :"six.nonacosa"
          }
@@ -26,7 +26,7 @@ userService.loadUser = function (username, req, res, next,cbdata) {
 // verify User from dataBase
 userService.verifyUser = function (username) {
     //todo://verify...
-    logger.debug("todo 验证username状态 并返回nickname")
+    logger.debug("todo 验证username状态 并返回nickname等信息")
     return true;
 }
 
