@@ -17,7 +17,7 @@ var fetch = require('node-fetch');
 //   // res.render('index', { title: 'Express' });
 // });
 router.get('/', function(req, res, next) {
-  res.render('start');
+  res.render('start');    
 });
 router.get('/demo', function(req, res, next) {
   //TODO:异步的调整
@@ -27,6 +27,7 @@ router.get('/demo', function(req, res, next) {
 });
 router.get('/404', function(req, res, next) {
   logger.info(common);
+  common.nickName=404;
   res.render('404',common);
 });
 router.get('/mine', function(req, res, next) {
