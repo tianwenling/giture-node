@@ -13,7 +13,7 @@ python:爬虫+自动化   python语言运用不太熟练,再有实在服务器�
 ```
 
 ### node端的架构和使用的中间件
-####架构
+####常用库
 
 
 
@@ -23,7 +23,8 @@ express         | log4js | ejs       | ejs-mate | node-fetch
 
 
 
-
+####架构
+待更新......
 
 
 
