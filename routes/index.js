@@ -20,7 +20,7 @@ router.get('/', function(req, res, next) {
   res.render('start');    
 });
 router.get('/demo', function(req, res, next) {
-  //TODO:异步的调整
+  //TODO:异步的调整...
   nodeFetchUtil.body('http://localhost/order/1');
   nodeFetchUtil.json('http://localhost/order/1');
 
