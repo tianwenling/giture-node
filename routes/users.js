@@ -7,6 +7,7 @@ var logger = require('../common/logs').logger('normal');
 var UserResult = [];
 
 /* GET users listing. */
+//打算采用第三方账号
 router.get('/:username', function (req, res, next) {
   var username = req.params.username;
   console.log(username)
