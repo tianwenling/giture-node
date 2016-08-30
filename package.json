@@ -13,7 +13,6 @@
     "ejs": "^2.5.1",
     "express": "~4.13.4",
     "github-markdown-css": "^2.4.0",
-    "jade": "~1.11.0",
     "log4js": "^0.6.38",
     "markdown-js": "^0.0.3",
     "morgan": "~1.7.0",
