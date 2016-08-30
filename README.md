@@ -1,6 +1,7 @@
 
-## 🍃 一个node.js和java实现前后分离的---node端项目实例
+
 ### 什么是giture?
+- 本实例运行于亚马逊AWS云服务
 
 ```
 giture 是我打算搭建的一个多人博客、论坛github风格系统,思量了很久最终使用了这套架构:
@@ -28,3 +29,8 @@ express         | log4js | ejs       | ejs-mate | node-fetch
 
 
 
+
+###联系方式
+
+- 关注微博：  [庄小达哒哒](http://www.weibo.com/5939264503/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1 "庄小达哒哒")
+- 邮    箱：  pkwenda@163.com
