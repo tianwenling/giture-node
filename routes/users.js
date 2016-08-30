@@ -7,7 +7,7 @@ var logger = require('../common/logs').logger('normal');
 var UserResult = [];
 
 /* GET users listing. */
-//打算采用第三方账号
+//打算采用第三方账号:微信、微博、github,吸引流量暂时不使用自注册
 router.get('/:username', function (req, res, next) {
   var username = req.params.username;
   console.log(username)
